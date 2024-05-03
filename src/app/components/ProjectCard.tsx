@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectCard = ({ sourceCode,imgUrl, title, description }) => {
+const ProjectCard = ({ sourceCode, imgUrl, title, description }) => {
     return (
         <div>
             <div

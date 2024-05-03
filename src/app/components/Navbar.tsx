@@ -28,13 +28,13 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-10 bg-gray-900 border-b-[1.5px] border-gray-800 bg-opacity-50">
+        <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] border-b-[1.5px] border-gray-800">
             <div className="flex flex-wrap items-center justify-between mx-auto py-4 md:py-2 px:5 md:px:10 xl:px-36">
                 <Link
                     href="/"
                     className="text-3xl md:text-3xl text-white font-semibold"
                 >
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-blue-400 to-blue-500">AG</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300  to-orange-500">AG</span>
                 </Link>
                 <div className="block md:hidden">
                     {!navbarOpen ? (

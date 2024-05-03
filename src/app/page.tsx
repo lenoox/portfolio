@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "@app/components/Navbar";
 import AboutSection from "@app/components/AboutSection";
 import ProjectsSection from "@app/components/ProjectsSection";
+import ContactSection from "@app/components/ContactSection";
+import Footer from "@app/components/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +14,9 @@ export default function Home() {
               <HeroSection />
               <AboutSection />
               <ProjectsSection />
+              <ContactSection />
           </div>
+          <Footer />
       </main>
   );
 }

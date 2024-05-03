@@ -5,17 +5,18 @@ import {TypeAnimation} from "react-type-animation";
 const HeroSection = ()=> {
     return (
         <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
-            <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
+            <div className="col-span-7 place-self-center place-items-center text-center sm:text-left grid lg:place-items-start">
             <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
-                <div className="text-transparent bg-clip-text  bg-gradient-to-r from-sky-400  to-blue-600">Hello, I'm{" "}</div>
+                <span className="text-transparent bg-clip-text  bg-gradient-to-r from-sky-400  to-blue-600">Hello, I'm{" "}</span>
                 <div>
                     <TypeAnimation
                         sequence={[
                             'Adam',
-                            2000,
-                            'Fullstack Developer',
-                            2000,
+                            3000,
+                            'Backend Developer',
+                            3000,
                             'Frontend Developer',
+                            3000,
                         ]}
                         wrapper="span"
                         speed={70}
@@ -25,7 +26,7 @@ const HeroSection = ()=> {
             </h1>
             <p className="text-[#ADB7BE] text-lg mb-6 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
             <div>
-                <button className="px-1 py-1 w-full sm:w-fit  rounded-full mr-4 bg-gradient-to-br from-blue-800  via-blue-500 to-sky-300 hover:bg-slate-200 text-white">Contact</button>
+                <button className="px-9 py-2 w-full text-md sm:w-fit  rounded-full mr-4 bg-gradient-to-br from-blue-800  via-blue-500 to-sky-300 hover:bg-slate-200 text-white">Contact</button>
             </div>
             </div>
             <div className="col-span-5 place-self-center mt-4 lg:mt-0">

@@ -17,8 +17,8 @@ const ProjectCard = ({ sourceCode, imgUrl, title, description }:ProjectCard) => 
                  className="w-full h-full"
                  src={imgUrl}
                  alt={title}
-                 width={300}
-                 height={200}
+                 width={700}
+                 height={300}
                  style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
              >
              </Image>

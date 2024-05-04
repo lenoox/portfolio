@@ -4,25 +4,8 @@ import Link from "next/link";
 import NavLink from "./Navlink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import {navLinks} from "@app/data/Navbar";
 
-const navLinks = [
-    {
-        title: "Home",
-        path: "/",
-    },
-    {
-        title: "About",
-        path: "#about",
-    },
-    {
-        title: "Projects",
-        path: "#projects",
-    },
-    {
-        title: "Contact",
-        path: "#contact",
-    },
-];
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);

@@ -1,5 +1,9 @@
 import Link from "next/link";
-const NavLink = ({ href, title }) => {
+export interface NavLink{
+    href:string,
+    title:string,
+}
+const NavLink = ({ href, title }:NavLink) => {
     return (
         <Link
             href={href}

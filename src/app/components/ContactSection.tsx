@@ -10,7 +10,7 @@ const ContactSection = () => {
                 <h5 className="text-xl font-bold">Let&#39;s Connect</h5>
                 <div className="socials flex flex-row gap-2 pt-8">
                     <Link href="https://www.linkedin.com/in/adamgorecki128/">
-                        <Image src={LinkedinIcon} alt="Linkedin url" priority/>
+                        <Image src={LinkedinIcon} alt="Linkedin url"/>
                     </Link>
                 </div>
             </div>

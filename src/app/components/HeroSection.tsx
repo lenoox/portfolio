@@ -42,7 +42,7 @@ const HeroSection = ()=> {
             </div>
             <div className="col-span-5 place-self-center mt-6 lg:mt-0">
                 <div className="rounded-full bg-amber-500 w-[250px] h-[250px] lg:w-[290px] lg:h-[290px] relative">
-                    <Image src="/images/avatar.png" className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" width={300} height={300} alt="avatar image"/>
+                    <Image src="/images/avatar.png" className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" width={300} height={300} alt="avatar image" priority/>
                 </div>
             </div>
         </section>

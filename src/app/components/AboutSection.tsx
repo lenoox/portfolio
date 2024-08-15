@@ -3,6 +3,7 @@ import React, {JSX, useState, useTransition} from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import {About, aboutData} from "@app/data/About";
+import {find} from "lodash";
 
 const AboutSection = () => {
     const [tab, setTab] = useState<string>("skills");
@@ -47,7 +48,7 @@ const AboutSection = () => {
                         </TabButton>
                     </div>
                     <div className="mt-8">
-                        {aboutData.find((t: About) => t.id === tab)?.content}
+                        {find(aboutData,(t: About) => t.id === tab)?.content}
                     </div>
                 </div>
             </div>

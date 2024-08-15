@@ -3,11 +3,13 @@ import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import {Projects, projectsData} from "@app/data/Projects";
+import {filter, map} from "lodash";
+
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState("All");
 
-    const filteredProjects = projectsData.filter((project:Projects) =>
+    const filteredProjects = filter(projectsData,(project:Projects) =>
         project.tag.includes(tag)
     );
 
@@ -48,7 +50,7 @@ const ProjectsSection = () => {
                 />
             </div>
             <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-                {filteredProjects.map((project, index) => (
+                {map(filteredProjects,(project, index) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}

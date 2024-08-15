@@ -5,6 +5,7 @@ import NavLink from "./Navlink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 import {navLinks} from "@app/data/Navbar";
+import {map} from "lodash";
 
 
 const Navbar = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
                 </div>
                 <div className="hidden md:block md:w-auto" id="navbar-default">
                     <ul className="font-medium flex p-4 md:p-0 rounded-lg flex-row md:space-x-8 mt-0">
-                        {navLinks.map((link) => {
+                        {map(navLinks,(link) => {
                             return (
                                 <li  key={link.title}>
                                     <NavLink
